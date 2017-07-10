@@ -1,0 +1,643 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "backgroundSlider"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1  
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+*
+	font-family: 'Philosopher'
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	position: relative
+	line-height: 1.75
+	opacity: 1
+
+// SHOW / HIDE CLASSES FOR NAV
+#nav
+	display: none
+.hide
+	display: none
+.show
+	display: block
+
+.navbar-brand
+	padding: 10px 15px
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+	background-color: #E97018
+	color: #000
+	font-weight: bold
+	height: 101%
+.navbar-default .navbar-nav > li > a
+	color: #000
+	font-family: 'Philosopher', sans-serif
+	font-size: 20px
+
+// END SHOW / HIDE CLASSES
+// СОЦИАЛОЧКИ
+.social
+	height: 3em
+	width: 13.5em
+	li
+		display: block
+		height: 3em
+		width: 3em
+		line-height: 4em
+		margin: -2.2em
+		position: absolute
+		transition: transform .7s
+		transform: rotate(45deg)
+		text-align: center
+		
+	a
+		color: #fffdf0
+		display: block
+		height: 4em
+		line-height: 3.7em
+		text-align: center
+		transform: rotate(-45deg)
+		width: 4em
+	li:hover 
+		transform: scale(1.3,1.3) rotate(45deg)
+.facebook 
+    background: #155b9d
+    left: 0
+    top: 0
+.instagram
+    background: #e11a30
+    left: 80px
+    top: 0
+.www
+    background: green
+    left: 160px
+    top: 0%
+
+
+// END СОЦИАЛОЧКИ
+// СТИЛИ ДЛЯ ПЕРВОЙ СТРАНИЦЫ
+.fp
+	height: 100vh
+	background-attachment: fixed
+	background-size: cover
+	position: relative
+.h1
+	position: relative
+	width: 50%
+	display: block
+	margin: 5px auto
+	background-color: rgba(#fff,.3)
+	border-radius: 10px
+	img
+		width: 30%
+		display: block
+		margin: 0 auto
+		padding: 3%
+	.since
+		position: absolute
+		display: block
+		width: 100%
+		bottom: -50px
+		left: 50%
+		font-size: 18px
+		padding-bottom: -50px
+
+	p
+		font-family: $default-font
+		text-align: right
+		margin-right: 45%
+		font-size: 30px
+		margin-top: -91px
+		color: #000
+		position: relative
+		font-family: 'Philosopher', sans-serif
+
+	
+.menu
+	background-image: url("../img/logo_white.png")
+	background-size: 13%
+	background-repeat: no-repeat
+	background-position: 50% 5%
+	padding-top: 80px
+	&__group
+		&__item
+			list-style-type: none
+			white-space: nowrap
+			transform: skew(45deg, 30deg)
+			&-left
+				list-style-type: none
+				padding: 2px 30px
+				cursor: pointer
+				transition: border-left .3s, margin-left 2s
+				width: 45%
+				margin: 0 auto
+				background-color: #fff
+				transform: skew(10deg)
+				p
+					white-space: nowrap
+					transform: skew(-10deg)
+					color: #000
+					padding-top: 7px
+					padding-left: 40px
+					font-family: 'Neucha'
+					font-size: 25px
+					font-weight: 600
+
+					a
+						color: black
+						text-decoration: none
+
+
+				&:hover
+					border-left: 20px solid red
+	&__destination
+		margin-top: 100px
+		text-align: center
+		li
+			list-style-type: none
+			font-size: 25px
+			color: #fff
+			background-color: rgba(192,192,192,0.1)
+			font-family: 'Philosopher', sans-serif
+			button
+				color: #000
+			&:last-child
+				padding-top: 20px
+				padding-bottom: 20px
+// END СТИЛИ ДЛЯ ПЕРВОЙ СТРАНИЦЫ
+// SECOND PAGE
+.sp, .fp, .tp
+	padding-top: 3%
+	width: 100%
+	position: relative
+	background-color: #E1DDDA
+	color: #000
+	&__header
+		display: block
+		height: 100px
+		position: relative
+		padding-bottom: 18%
+		padding-top: 5%
+		&-logo
+			text-align: left
+			float: left
+		&-text
+			float: left
+			p
+				font-size: 18px
+				white-space: nowrap
+				i 
+					margin: 0 15px
+					color: green
+			p:first-child
+				font-size: 35px
+
+			p:last-child
+				margin-top: -15px
+		&-icons
+			position: absolute
+			top: 70%
+			right: 20%
+	&__box
+		position: relative
+		padding-left: 20%
+	.brends
+		display: block
+		margin: 60px 0 100px 0
+		padding-left: 10%
+		p
+			text-align: center
+			font-size: 30px
+			font-family: 'Philosopher'
+			color: #000
+			padding-bottom: 20px
+	&__main-slider
+		position: relative
+	.rightBottomImg
+		width: 15%
+		height: auto
+		position: absolute
+		bottom: 8%
+		right: 1.7%
+		z-index: 999
+
+.tp
+	padding-top: 3%
+	position: relative
+	background-color: rgba(#b8e99e,.5)
+	&__body
+		img
+			width: 100%	
+		.Tcol
+			margin-top: 10px
+			width: 100%
+			tr
+				line-height: 50px
+				td 
+					width: 33.3%
+					text-align: center
+					p
+						padding: 20px
+						font-size: 35px
+						span
+							font-size: 54px
+							color: #000
+							&:after
+								content: ""
+								border-bottom: 3px solid green
+								width: 30px
+								margin: 10px auto
+								display: block
+					img
+						height: 300px
+figure
+	display: inline-block
+	float: left
+	figcaption
+		height: 200px
+		width: 200px
+		background-color: #000
+		text-align: center
+		font-family: 'Philosopher', sans-serif
+		font-size: 35px
+		padding-left: 10px
+	img
+		height: 200px
+		width: 200px
+
+.rooms
+	width: 100%
+	margin-top: 50px
+	td
+		width: 25%
+		font-size: 30px
+		color: #000
+		span
+			color: green
+			font-size: 80px
+.tp__btn
+	font-size: 22px
+	width: 300px
+	display: block
+	margin: 50px auto 50px auto
+.top_line
+	p
+		padding-top: 50px
+		color: #000
+		&:before
+			content: ""
+			display: block
+			height: 2px
+			width: 20%
+			margin-left: 40%
+			background-color: #000
+	span
+		font-size: 15px
+.down_line
+	p
+		padding-top: 50px
+		color: #000	
+		&:after
+			content: ""
+			display: block
+			height: 2px
+			width: 20%
+			margin-left: 40%
+			background-color: #000
+	span
+		font-size: 15px
+		text-align: center
+.brends
+	height: 100px
+	padding-top: 30px
+	margin-left: 80px
+	ul
+		li
+			list-style-type: none
+			float: left
+			margin-left: 30px
+			img
+				height: 37px
+				width: auto
+
+// END SECOND PAGE
+// THIRD PAGE
+
+.icons
+	position: absolute
+	right: 50px
+	.social
+		.www
+			left: 20%
+			top: 40%
+		.facebook
+			top: 40%
+
+
+// END THIRD PAGE
+// FOURTH PAGE
+.fourthpage
+	position: relative
+	margin-top: 30px
+	&__header
+		.shop
+			font-size: 70px
+			letter-spacing: -5px
+			line-height: 60px
+			padding-left: 50px
+
+		p
+			font-size: 33px
+			line-height: 30px
+			padding-left: 50px
+			margin-top: 35px
+			margin-left: -25px
+		.social
+			position: relative
+			top: 55px
+		&__logos
+			padding: 30px 0
+			li 
+				list-style-type: none
+				display: inline-block
+				padding-right: 10px
+				img
+					height: 55px
+					max-width: 180px
+	&__mainimg
+		padding: 50px 0
+		img
+			width: 100%
+			height: 600px
+	&__firstline
+		&-text
+			padding-bottom: 30px
+			font-size: 40px
+			text-align: center
+			&:before, &:after
+				content: ""
+				width: 10%
+				display: block
+				margin: 0 auto
+				border-bottom: 2px solid red
+	&__secondline
+		&-text
+			padding-bottom: 30px
+			&:before, &:after
+				content: ""
+				width: 10%
+				display: block
+				margin: 0 auto
+				border-bottom: 2px solid red
+			p
+				font-size: 40px
+				text-align: center
+
+	.shop__item
+		height: 300px
+		img
+			width: 150px
+			height: 150px
+			display: block
+			margin: 20px auto
+			cursor: pointer
+			transition: border-top-left-radius .5s ease, border-bottom-right-radius .5s ease,  width .5s ease
+			&:hover
+				border: 1px solid red
+				width: 160px
+				border-radius: 50px
+		&-button
+			margin-top: 20px
+			width: 100px
+			margin: 0 auto
+
+			button
+				padding: 10px 20px
+				font-size: 30px
+				margin-top: 50px
+				margin-left: -100px
+		p
+			text-align: center
+			font-size: 25px
+			line-height: 25px
+			.texxt
+				font-size: 18px
+// END FOURTH PAGE
+
+// EXPEDITION
+
+.expedition
+	background-color: #fff
+	&__header
+		padding-top: 50px
+	&__mainimg
+		width: 25%
+		float: left
+		padding-bottom: 10px
+
+	.tabletext
+		display: block
+		width: 100%
+		height: 105px
+		font-size: 16px
+		background-color: #000
+		border-radius: 10px
+		color: yellow
+		padding-left: 20%
+		padding-top: 10px
+	.social
+		.www
+			left: 20%
+			top: 100%
+		.facebook
+			top: 100%
+			left: 40%
+	&-button
+		height: 60px
+		width: 300px
+		display: block
+		margin: 30px auto
+		font-size: 25px
+.col_third
+	width: 32%
+
+.col_fifth
+	position: relative
+	display:inline
+	display: inline-block
+	float: left
+	margin-right: 2%
+	margin-bottom: 20px
+
+.end
+	margin-right: 0 !important
+
+/*-=-=-=-=-=-=-=-=-=-=- */
+/* Flip Panel */
+/*-=-=-=-=-=-=-=-=-=-=- */
+
+.panel
+	margin: 0 auto
+	height: 0 
+	width: 0
+	background-color: transparent
+
+
+.panel .front,
+.panel .back 
+	text-align: center
+
+	
+.panel .front 
+	height: inherit
+	position: absolute
+	top: 0
+	z-index: 900
+	text-align: center
+	-webkit-transform: rotateX(0deg) rotateY(0deg)
+	-moz-transform: rotateX(0deg) rotateY(0deg)
+	-webkit-transform-style: preserve-3d
+	-moz-transform-style: preserve-3d
+	-webkit-backface-visibility: hidden
+	-moz-backface-visibility: hidden
+	-webkit-transition: all .4s ease-in-out
+	-moz-transition: all .4s ease-in-out
+	-ms-transition: all .4s ease-in-out
+	-o-transition: all .4s ease-in-out
+	transition: all .4s ease-in-out
+
+
+.panel .back 
+	height: inherit
+	position: absolute
+	top: 0
+	z-index: 1000
+	-webkit-transform: rotateY(-180deg)
+	-moz-transform: rotateY(-180deg)
+	-webkit-transform-style: preserve-3d
+	-moz-transform-style: preserve-3d
+	-webkit-backface-visibility: hidden
+	-moz-backface-visibility: hidden
+	-webkit-transition: all .4s ease-in-out
+	-moz-transition: all .4s ease-in-out
+	-ms-transition: all .4s ease-in-out
+	-o-transition: all .4s ease-in-out
+	transition: all .4s ease-in-out
+
+.panel.flip .front 
+	z-index: 900
+	-webkit-transform: rotateY(180deg)
+	-moz-transform: rotateY(180deg)
+
+.panel.flip .back 
+	z-index: 1000
+	-webkit-transform: rotateX(0deg) rotateY(0deg)
+	-moz-transform: rotateX(0deg) rotateY(0deg)
+
+.box1
+	background-color: yellow
+	width: 250px
+	height: 100px
+	margin: 0 auto
+	border-radius: 10px
+	-moz-border-radius: 10px
+	-webkit-border-radius: 10px
+	cursor: pointer
+	img
+		width: 80px
+		padding-top: 10px
+
+.box2
+	background-color: black
+	width: 250px
+	height: 100px
+	margin: 0 auto
+	border-radius: 10px
+	-moz-border-radius: 10px
+	-webkit-border-radius: 10px
+	cursor: pointer
+	display: flex
+	p
+		color: yellow
+		line-height: 40px
+		display: flex
+		text-align: center
+		align-items: center 
+		padding-left: 10px
+	.b_text
+		padding-top: 10px
+		font-size: 22px
+		padding-left: 20px
+
+.actual
+	width: 75%
+	margin: 0 auto
+	.already
+		font-size: 50px
+		text-align: center
+		white-space: nowrap
+		padding: 30px 50px
+		.fa-free-code-camp
+			margin: 0 50px
+			color: red
+	&__slide
+		min-height: 250px
+		img
+			float: left
+			width: 40%
+			height: 500px
+			border-radius: 25px
+		&-text
+			margin-left: 55%
+			margin-right: 5%
+			.table_a1
+				font-weight: bold
+				padding-right: 50px
+			p
+				line-height: 20px
+		&__footer
+			position: relative
+			.price
+				position: absolute
+				bottom: -200px
+				color: red
+				font-size: 80px
+
+footer
+	p
+		font-size: 30px
+		position: relative
+		text-align: left
+		i 
+			color: green
+			position: relative
+			top: 25px
+			margin: 0 100px
+
+
+		
+@import "media" // Всегда в конце
